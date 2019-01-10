@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css">
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#68440a; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
+
+    /*text styles*/
+  
+    h1 {
+    margin: 15px 0px 0px 0px !important;
+    font-family: "Times New Roman", serif !important;
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #57068c;
+    text-align: center;
+
+    }
+
+    h2 {
+    margin: 0px 0px 50px 0px !important;
+    padding-bottom:15px !important;
+    font-family: "Times New Roman", serif !important;
+    font-size: 29px !important;
+    font-weight: normal;
+    line-height: 32px;
+    color: #57068c;
+    text-align: center;
+
+    }
+
+    h3 {
+    margin: 0px 0px !important;
+    font-family: "Georgia", serif;
+    font-size: 20px !important;
+    font-weight: normal;
+    line-height: 32px;
+    color: #57068c;
+
+    }
+
+    p {
+    margin: 0px 0px 20px 0px !important;
+    font-family: "Georgia", serif;
+    font-size: 17px;
+    line-height: 26px;
+    color: #000000;
+    } 
+
+    a {
+    color:#57068c;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(87, 6, 140, 0.5) !important;
+    
+    }
+
+    a.title {
+    font-family: "Georgia", serif !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 22px;
+    color: #57068c !important;
+    border-bottom: none !important;
+    text-align: left; 
+    
+    }
+
+    /*button styling */
+
+    a.button {
+    font-family: "Arial", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    color: #57068c !important;
+    border-bottom: 2px solid #57068c !important;
+    }
+
+    td.button{
+    padding:20px 0px 0px 0px;
+
+    }
+
+    /*footer styles*/
+
+    a.footer {
+    color:#000000;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+    }
+
+
+    td.footer {
+    padding:10px 0px 0px 0px;
+    font-family: "Georgia", Times, serif;
+    color: #000000; 
+    font-size: 13px; 
+    line-height: 24px;
+    }
+
+    /*adjusts logo*/  
+
+    td.header {
+    padding:20px 30px !important;       
+
+    }
+
+
+    /*points of pride */
+
+    p.pride {
+    margin:0 0 0 0 !important;
+    padding-bottom:0px !important;
+    font-family: "Georgia", serif !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 30px;
+    color: #57068c;
+
+    }
+
+    .prideFull {
+    font-family: "Georgia", serif !important;
+    font-size: 35px !important;
+    font-weight: bold !important;
+    line-height: 40px;
+    color: #57068c;
+
+    }
+
+    .pride-caption {
+    margin: 20px 0px !important; 
+    padding: 0px, 0px, 0px, 0px !important;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center; 
+
+
+    }
+
+        /*adjusts box length side by side*/
+
+    .pride-caption-short {
+    margin: 20px 10px 42px 10px !important; 
+    padding: 0px 0px 0px 0px !important;
+    font-family: "Georgia", serif;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;     
+        
+    }
+
+
+    /*drop cap*/
+
+    .dropcap {
+
+    color: #57068c;
+    float: left;
+    font-family: "Georgia", serif !important;
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: bold !important;
+    padding-right: 6px;
+    padding-bottom: 2px;
+
+    }
+
+   /*infographic*/ 
+
+    .caption {
+    font-family: "Georgia", serif !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+    line-height: 23px;
+    color: #57068c;
+    }
+
+
+
+/*alumni events*/
+    .event {
+    margin: 0px 0px !important;
+    font-family: "Georgia", serif;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 26px;
+    color: #57068c;
+    }
+
+
+   /* desktop column image display */
+
+    .columnImage {
+    display: block !important;
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 90%;
+    padding-bottom: 30px;
+    }
+
+    .chartImg {
+    display: block !important;
+    float: none !important;
+    margin: 0px auto !important;
+    max-width: 80%;
+    }
+
+    /* padding */
+   
+    table.responsive {
+    padding:0px 0px !important;   
+
+    }
+
+    td.wrapper {
+    padding:30px 0px 50px 0px!important;    
+    }
+
+    td.intro-padding{
+    padding:0px 0px !important;    
+
+    }
+
+    td.templateColumnContainer{
+    padding-bottom:25px !important;
+    }   
+
+    .leftColumnContent, .rightColumnContent, .centerColumnContent {
+    text-align: center;
+    padding: 25px !important;
+    }
+
+    .singleHalfBlock {
+     margin: 0 auto !important; 
+     padding: 25px !important;  
+     width: 280px !important;
+     text-align: center;
+    }
+
+/* news section */
+
+    .headline {
+    margin: 0px 0px !important;
+    padding-bottom: 0px !important;
+    font-family: "Georgia", serif;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    line-height: 26px;
+    color: #57068c;
+    }
+
+    td.news-padding{
+    padding-top:15px !important;  
+    text-align: left; 
+
+    }
+
+   img.news-img {
+    height: 35px !important;
+    padding-bottom: 10px;
+    }
+
+ /*seal watermark*/   
+
+   td.watermark {
+    background-image: url(http://www.nyu.edu/info/president.emails/18-073/seal-483px.png); 
+    background-repeat: no-repeat; 
+    background-position:center 20px;
+    width:100%;
+    }
+
+@media screen and (max-width: 600px) {
+
+  /*adjusts logo*/  
+
+    td.header {
+    padding:15px 30px !important;       
+
+    }
+
+    td.masthead {
+    padding-bottom:25px !important;
+
+    }
+
+    h2 {
+    margin: 0px 0px 35px 0px !important;
+    }
+
+   /* padding */
+
+    td.wrapper, table.responsive {
+    width:100% !important;
+    padding: 30px 20px 30px 20px !important;   
+    }
+
+ /* 1 chart infographic styles */   
+
+    .graphicContent {
+    width:100% !important;
+
+    }
+
+    .graphicCaption {
+    text-align: right;
+    padding: 20px 30px 20px 30px !important;
+
+    }
+
+    .singleGraphicContainer {
+    display:block !important;
+    width:100% !important;
+    padding: 20px 0px !important;  
+    }
+
+    /* 2 column reflow */
+
+    .templateColumns{
+    width:100% !important;
+    }
+
+    td.blockPadding{
+    padding-top:0px !important;
+    }
+
+    .templateColumnContainer {
+    display:block !important;
+    width:100% !important;
+    padding: 25px 0px !important;
+    }
+
+
+    .columnImage {
+    display: block !important;
+    height: auto !important;
+    max-width: 90% !important;
+    min-width:70% !important;
+    margin: 0 auto !important;
+        
+    }
+
+    .leftColumnContent, .rightColumnContent {
+    text-align: center;
+    padding: 20px 30px 20px 30px !important;
+
+    }
+    
+    .centerColumnContent{
+    text-align: center;
+    padding: 20px 10px 20px 10px !important;   
+    }
+
+
+    .singleHalfBlock {
+    width:100% !important;
+    text-align: center;
+    padding: 20px 30px 20px 30px !important;
+
+    }
+
+  /* news section */   
+
+    img.news-img {
+    display: block !important;
+    height: auto !important;
+    max-width: 50% !important;
+    padding: 0px 0px 15px 0px;
+
+    } 
+
+     /*seal watermark*/   
+
+    td.watermark {
+    background-image: url(http://www.nyu.edu/info/president.emails/18-073/seal-302px.png); 
+    background-repeat: no-repeat; 
+    background-position: top;
+    }
+
+}
+
+
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #FFFFFF;" bgcolor="#FFFFFF">
+
+<!-- header -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+    <tr>
+       <td align="center" bgcolor="#FFFFFF">
+          <!-- HIDDEN PREHEADER TEXT -->
+            <div style="display: none; font-size: 1px; color: #FFFFFF; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+               Welcome to the first issue “In and Of”, a newsletter exclusively for NYU Board Members.
+            </div>
+            <!-- HEADER TEXT -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td align="center" style="background-color: #FFFFFF;" bgcolor="#FFFFFF">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="center" class="header">
+                         <table>
+                            <tr>
+                                <td style=" color: #ffffff;" border="0"><img src="http://www.nyu.edu/info/president.emails/18-073/nyu-long.png" alt="New York Univeristy logo" width="175"></td>
+                            </tr>
+                         
+                         </table>
+                        </td>
+                    </tr>            
+                </table>
+                </td>
+            </tr>
+        </table>
+       </td>
+
+    </tr>
+  <!--rule line-->
+   <tr>
+         <td style="border-top: 1px solid #d6d6d6;">
+          </td>
+    </tr> 
+
+<!--intro -->
+
+    <tr>
+        <td align="center">
+            <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">
+                <tr>
+                    <td align="center" bgcolor="#FFFFFF" class="wrapper" style="padding:30px 0px 50px 0px">
+                        <table>
+                            <tr>
+                                <td class="intro-padding">
+                                    <table>
+                                        <tr>
+                                            <td align="center" class="masthead"><h1>In and Of</h1>
+                                            <img src="http://www.nyu.edu/info/president.emails/18-073/greybar-divider.png" alt=" ">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" class="watermark">
+                                                
+                                                <p><span class="dropcap">L</span> orem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla nisi, cursus nec augue sed, feugiat lacinia quam. Donec at dolor sed nulla tincidunt hendrerit. Suspendisse pulvinar risus dolor, venenatis convallis lorem cursus nec. Nam porta nunc turpis, ac sollicitudin lectus tristique a. Phasellus diam est, suscipit non mollis in, tincidunt at nunc. Quisque blandit non nulla in sollicitudin. Donec volutpat nisi quis eros pellentesque malesuada. Maecenas justo risus, maximus ut elit consequat, tempor vestibulum mauris. Phasellus vel ligula nec ex laoreet consectetur. Morbi sit amet arcu eget lacus convallis dictum. In imperdiet ante at rhoncus venenatis. Aliquam sit amet nisi pulvinar, volutpat nunc quis, fermentum quam. Vivamus pretium ipsum sed orci tempor, sit amet ultricies augue ornare. Ut at est aliquam, faucibus nibh quis, maximus neque. Morbi a dapibus nibh, at malesuada lorem. 
+                                                </p>
+                                                                                                
+                                                <p>Yours,</p>
+
+                                                <p><img src="http://www.nyu.edu/info/president.emails/18-073/hamilton-sig.png" alt="Signature: Andy" /></p>
+
+                                                <p>Andrew D. Hamilton<br>President</p>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>           
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+   
+<!--points of pride-->
+
+    <tr>
+        <td align="center" style="border-top: 3px solid #d6d6d6;">
+            <table  align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">   
+                 <tr>
+                    <td align="center" bgcolor="#FFFFFF" class="wrapper" style="padding:30px 0px 50px 0px">
+                        <table>
+<!--double half block-->
+                            <tr>
+                                <td> 
+                                    <h2>Points of Pride</h2>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                                 <tr>
+                                                     <td align="center" valign="top" style="padding-right:10px" width="50%" class="templateColumnContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                 <td class="leftColumnContent" align="center" valign="center" style="border: 2px solid #d6d6d6;">
+                                                                    <p class="pride">MBA Victory</p>
+                                                                 
+                                                                    <img src="http://www.nyu.edu/info/president.emails/18-073/greybar-divider.png"  alt=" ">
+                                                                    <p class="pride-caption">A team of four NYU MBA
+                                                                    students won the 8th Annual
+                                                                    <a href="https://www2.deloitte.com/us/en/pages/about-deloitte/articles/press-releases/nyu-wins-eighth-annual-mba-national-case-competition.html" style="color:#57068c">Deloitte MBA National Case
+                                                                    Competition</a>. It’s the first time
+                                                                    that Stern&mdash;which beat out
+                                                                    Sloan (MIT), Tuck (Dartmouth),
+                                                                    and Fuqua (Duke)&mdash;has taken
+                                                                    the top honors.</p>
+                                                                 </td>
+                                                             </tr>
+                                                        </table>
+                                                      </td>
+                                                      <td align="center" valign="top" style="padding-left:10px" width="50%" class="templateColumnContainer">
+                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                             <tr>
+                                                                  <td class="rightColumnContent" align="center" valign="center" style="border: 2px solid #d6d6d6;">
+                                                                    <p class="pride">Research Gains</p>
+                                                                   
+                                                                    <img src="http://www.nyu.edu/info/president.emails/18-073/greybar-divider.png" alt=" ">
+                                                                    <p class="pride-caption">The latest National Science
+                                                                    Foundation’s Higher Education
+                                                                    Research and Development survey
+                                                                    ranked NYU at 23, up from
+                                                                    55 just seven years ago.
+                                                                    An important indicator of the
+                                                                    growing strength of NYU’s
+                                                                    research enterprise.</p>
+                                                                    </td>
+                                                            </tr>
+                                                         </table>
+                                                     </td>
+                                                 </tr>
+                                        </table>
+<!--full width block-->
+
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                                 <tr>
+                                                     <td align="center" valign="top" width="100%" class="templateColumnContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                 <td class="centerColumnContent" align="center" valign="center" style="border: 2px solid #d6d6d6">
+                                                                    <p class="pride">Cinematic Arts Awards</p>
+                                                                   
+                                                                    <img src="http://www.nyu.edu/info/president.emails/18-073/greybar-divider.png" alt="">
+                                                                    <p class="pride-caption">Fourteen NYU alumni from Tisch School of the Arts, the College of Arts and Science, and the School of Law were honored with Emmy Awards this month. In film, last year’s national Student Academy Award&ndash;winner Kevin Wilson Jr. (Tisch ’18) went on to earn an Oscar nomination for Best Live Action Short Film this year, attending his first Oscars ceremony two months shy of graduation.</p>
+                                                                   
+                                                                 </td>
+                                                             </tr>
+
+                                                        </table>
+                                                      </td>
+                                                 </tr>
+                                        </table>
+<!--double half blocks-->
+                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                                 <tr>
+                                                     <td align="center" valign="top" style="padding-right:10px" width="50%" class="templateColumnContainer">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                 <td class="leftColumnContent" align="center" valign="center" style="border: 2px solid #d6d6d6;">
+                                                                    <p class="pride">Nobel Prize in Economics at NYU</p>
+                                                                    <img src="http://www.nyu.edu/info/president.emails/18-073/greybar-divider.png" alt="">
+                                                                    <p class="pride-caption">Stern’s Paul Romer wins the 2018 Nobel Prize in Economics, bringing the number of Nobel-winning economists currently serving on NYU’s faculty to four.</p>
+
+                                                                 </td>
+                                                             </tr>
+                                                        </table>
+                                                      </td>
+                                                      <td align="center" valign="top" style="padding-left:10px" width="50%" class="templateColumnContainer">
+                                                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                             <tr>
+                                                                  <td class="rightColumnContent" align="center" valign="center" style="border: 2px solid #d6d6d6;">
+                                                                   <p class="pride">Law School Ranking</p>
+                                                                 
+                                                                    <img src="http://www.nyu.edu/info/president.emails/18-073/greybar-divider.png" alt="">
+                                                                    <p class="pride-caption-short"><a href="https://abovethelaw.com/2018/11/yet-another-new-law-school-ranking-places-nyu-in-top-spot/">NYU School of Law ranked No.1 by Princeton Review</a> when it comes to career prospects.</p>
+
+                                                                    
+                                                                    </td>
+                                                            </tr>
+                                                         </table>
+                                                     </td>
+                                                 </tr>
+                                        </table>                                        
+
+
+
+<!--infographic-->
+
+    <tr> 
+        <td align="center" style="border-top: 3px solid #d6d6d6;">
+            <table  align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">   
+                <tr>
+                    <td align="center" bgcolor="#FFFFFF" class="wrapper" style="padding:30px 0px 50px 0px">
+                        <table>
+                    <!--content-->        
+                            <tr>
+                                <td >    
+                                    <h2>Growth in University R&amp;D Spending</h2>
+
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                          
+                                            <tr>
+                                                 <td align="center" valign="top" width="100%" class="singleGraphicContainer">
+                                                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                         <tr>
+                                                              <td class="centerColumnContent" align="center" valign="center">
+                                                              <img src="http://www.nyu.edu/info/president.emails/18-073/herd-growth-600px.png" class="columnImage" width="600" alt="Line Chart: NYU's Year-over-year growth in R and D expenditures was 121 percent compared to the top thirty universities' average of 17 percent">
+                                                               <p><span class="caption">Figure 1:</span>
+                                                               Over the last six years, NYU has cracked the top quartile of the NSF's top universities for R&amp;D expenditures, and our rate of growth is significantly higher than that of any other institution in the US. </p>
+                                                               
+                                                              </td>     
+                                                        </tr>
+                                                        
+                                                     </table>
+                                                 </td>
+                                            </tr>
+
+                                    </table>
+                               </td>
+                            </tr> 
+                         </table>
+                     </td>
+                </tr>
+             </table>            
+        </td>
+    </tr>   
+
+
+
+<!--alumni events-->
+
+    <tr>
+        <td align="center" style="border-top: 3px solid #d6d6d6;">
+            <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">
+                <tr>
+                        <td align="center" bgcolor="#FFFFFF" class="wrapper" style="padding:30px 0px 50px 0px">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">  
+                                <tr>
+                                    <td>
+                                        <h2>Upcoming Alumni Events</h2>   
+                                        <p align="left"><em>September 30, 2018</em><br>
+                                        <a href="#" class="title" style="color:#57068c">'Wave' Bye to Summer: Learn to Surf with RAN</a><br>
+                                        12:00 - 2:00 PM<br>
+                                        Rockaway Beach, Queens, NY</p>
+
+                                        <p align="left"><em>October 13, 2018</em><br>
+                                        <a href="#" class="title" style="color:#57068c">NYU Pan-Asia Alumni Conference 2018: Bridging the Future</a><br>
+                                        12:30 - 10:00 PM<br>
+                                        Rosewood Hotel, Beijing, China</p>
+                                        
+                                        <p align="left"><em>October 25, 2018</em><br>
+                                        <a href="#" class="title" style="color:#57068c">Alumni Weekend Celebration: San Francisco, CA</a><br>
+                                        6:00 - 9:00 PM<br>
+                                        LinkedIn San Francisco, San Francisco, CA</p>
+
+                                        <p align="left"><em>October 26-27, 2018</em><br>
+                                        <a href="#" class="title" style="color:#57068c">NYU Alumni Weekend</a><br>
+                                        Kimmel Center for University Life, New York, NY</p>
+
+                                     </td>
+                                </tr>
+                            
+                            </table>
+                        </td>
+                  </tr>
+    
+             </table>
+        </td>
+    </tr>
+
+</table>
+
+
+</body>                            
+</html>
