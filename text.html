@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Focus on Accessibility</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css">
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#68440a; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
+
+
+    /*text styles*/
+  
+	h1 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 35px;
+    font-weight: bold !important;
+    line-height: 32px;
+    color: #D71e5e;
+
+    }
+
+    h2 {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 26px !important;
+    font-weight: bold !important;
+    line-height: 32px;
+    color: #D71e5e;
+
+    }
+
+    h3 {
+    margin: 0px 0px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    line-height: 32px;
+    color: #D71e5e;
+
+    }
+    
+    p {
+    margin: 0px, 0px, 10px, 0px !important;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000000;
+    } 
+
+    td.check {
+    padding-left:35px;
+    padding-right:5px;
+    }
+    
+    td.checklist {
+    padding-left:5px;
+    padding-right:35px;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    color: #000000;
+
+    }
+
+
+    ul.bullet {
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-bottom:20px;
+    padding-right:35px;
+    text-indent: 0px !important;
+    font-family: "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;     
+
+    }
+    
+    li {
+    padding-top: 6px;
+            
+    }
+
+    a {
+    color:#57068c;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #57068c;
+     
+    }
+    
+    a.footer {
+    color:#000000;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+    }
+
+
+    td.footer {
+    padding:10px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #000000; 
+    font-size: 13px; 
+    line-height: 24px;
+    }
+
+
+    .nowrap{
+
+     white-space: nowrap;
+
+    }
+
+    /* MEDIA QUERIES */
+@media screen and (min-width: 601px) {
+
+    img.imgblock, .columnImage {
+    display: block !important;
+    float: none !important;
+    max-width: 53px !important;
+    margin: 0px auto !important;
+    padding: 0px 8px 8px 8px !important;
+    }
+
+    td.padding, table.responsive {
+	padding:30px 35px 0px 35px!important;    
+    }
+
+    td.section-padding{
+    padding:0px 35px !important;	
+
+    }
+
+    td.button-padding {
+    padding:0px 35px 0px 35px!important;    	
+
+    }
+
+    td.wrapper {
+    padding:30px 0px !important;    	
+
+    }
+
+}
+
+    /* MEDIA QUERIES */
+@media screen and (max-width: 600px) {
+
+	h1 {
+    font-size: 30px;
+
+    }
+
+	td.wrapper, table.responsive {
+	width:100% !important;
+	padding: 30px 35px 0px 35px !important;   
+	}
+
+	td.button-padding {
+    padding:15px 0px 30px 0px!important;  	
+
+    }
+
+    img.footer{
+    width: 70% !important;
+    max-width: 76px !important;
+    height:auto !important;
+    }
+
+}	
+
+@media screen and (max-width: 480px) {
+
+	td.header {
+    padding:15px 30px !important;    	
+
+    }
+
+	td.button-padding {
+    padding:15px 0px 30px 0px!important;  	
+
+    }
+
+    td.button{
+    width:100% !important; 	
+    }
+
+
+    
+    td.check {
+    padding-left:5px;
+    padding-right:5px;
+    }
+
+    td.checklist {
+    padding-left:5px;
+    padding-right:20px;
+
+    }
+    
+    
+    ul.bullet {
+    margin-top: 10px;
+    padding: 0px 15px 15px 0px!important;
+        
+    }
+
+    li {
+    padding-top: 8px;
+            
+    }
+
+
+
+    .templateColumns{
+    width:100% !important;
+    }
+
+    .templateColumnContainer{
+    display:block !important;
+    width:100% !important;
+    padding: 10px 0px 10px 0px !important;
+    }
+
+    .columnImage{
+    height:auto !important;
+    max-width: 53px !important;
+    width:100% !important;
+    margin: auto !important;
+        
+    }
+
+    .leftColumnContent{
+    text-align: center;
+    padding: 30px 30px 15px 30px !important;
+
+    }
+
+    .rightColumnContent{
+    padding: 0px 30px 30px 30px !important;
+            
+    }
+
+}
+
+</style>
+</head>
+<body style="margin: 0; padding: 0; background-color: #d6d6d6;" bgcolor="#d6d6d6">
+
+<!-- header -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+       <td align="center" bgcolor="#330662">
+          <!-- HIDDEN PREHEADER TEXT -->
+            <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+                Is your page content accessible?
+            </div>
+            <!-- HEADER TEXT -->
+        <table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper">
+            <tr>
+                <td align="center" style=" padding: 30px 0; background-color: #330662;" bgcolor="#330662">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td align="center" class="header">
+                       	 <table>
+                            <tr>
+                                <td style="font-family: Arial, Helvetica, sans-serif; color: #ffffff; font-size: 30px; font-weight: bold; line-height: 32px; text-align: center;" border="0">CMS TRAINING <span style="color:#d70e5e">&amp;</span> SUPPORT</td>
+                            </tr>
+                             <tr>
+                                <td style="font-family: Arial, Helvetica, sans-serif; color: #ffffff; font-size: 15px; font-weight: normal; line-height: 32px; text-align: center;" border="0"><em>for authors of www&#65279;.&#65279;nyu.&#65279;edu</em></td>
+                            </tr>
+                       	 </table>
+                        </td>
+                    </tr>
+                </table>
+                </td>
+            </tr>
+        </table>
+       </td>
+    </tr>
+</table>
+<!--intro content-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="center">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">
+				<tr>
+	             	<td style="background-color: #d6d6d6;" bgcolor="#d6d6d6" height="30px">
+	                </td>
+	            </tr>
+	            <!-- HERO IMAGE/TEXT -->
+	            <tr>
+	                <td align="center" bgcolor="#FFFFFF" class="wrapper">
+	                	<table>
+	                		<tr>
+	                			<td class="padding">
+	                				<table>
+				                    	<tr>
+					                        <td align="center" bgcolor="#FFFFFF">
+					                            <img alt="Magnifying glass focused on a check mark" src="http://www.nyu.edu/info/cms.emails/18-036/images/magnifyingglass.png" width="73px">
+					                        </td>
+				                   		</tr>
+							            <tr>
+							                <td align="center" bgcolor="#FFFFFF"> 
+							                	<h1>Focus on Accessibility</h1>
+							                </td>
+							            </tr>    
+							            <tr>
+											<td>
+												<p>This is the second edition of our Focus on Accessibility series. In case you missed it: <a href="https://www.nyu.edu/life/information-technology/help-and-service-status/accessibility/video-and-audio.html" style="color:#57068c; text-decoration: none;font-weight: bold; border-bottom: 1px solid #57068c;">learn how to make your videos accessible.</a>
+												</p>
+                                                
+											</td>
+									    </tr>
+									</table>
+								</td>
+							</tr>		    
+	                	</table>
+	                </td>
+	           	</tr>
+			</table>
+		</td>
+	</tr>
+</table>	
+<!--main content-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td align="center">
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">
+				<tr>
+	             	<td style="background-color: #d6d6d6;" bgcolor="#d6d6d6" height="30px">
+	                </td>
+	            </tr>	
+                <tr>
+                    <td align="center" bgcolor="#fdf2f7" class="wrapper">
+                        <table>
+                             <tr>
+                                <td align="center" bgcolor="#fdf2f7">
+                                    <img alt="The letter T" src="http://www.nyu.edu/info/cms.emails/18-036/images/letter-t.png" width="53px" class="imgblock">
+                                </td>
+                             </tr>
+                            <tr>
+                         		<td bgcolor="#fdf2f7"; class="section-padding"> 
+                            		<h2>Creating accessible text in the CMS</h2>
+		                             <h3>Why focus on text accessibility?</h3>
+		                             <p> Consider how your kitchen is organized. It would be frustrating to cook a meal if you could not easily find the utensils or ingredients you needed.</p>
+		                             <p>Organized pages, similar to an organized kitchen, benefit everyone. Pages with a clear layout and descriptive links are easier for users to navigate and read.</p>
+		                        </td>
+                   			 </tr>
+                   		</table>
+                    </td>
+                </tr>
+<!--checkmark-->
+		         <tr>
+		              <td>
+		                   <table cellpadding="0" cellspacing="0" border="0" width="100%">
+		                          <tr>
+		                                 <td style="background-image: url(http://www.nyu.edu/info/cms.emails/18-036/images/checkmark-line.png); background-repeat: no-repeat; background-position:center;" height="37px" bgcolor="#FFFFFF"> 
+		                                  </td>
+		                             </tr>
+		                   </table>
+		               </td>
+		         </tr>
+		         <tr>
+                        <td align="center" bgcolor="#FFFFFF" class="wrapper">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">  
+                            	<tr>
+                                    <td class="section-padding">
+                                        <h3> Accessibility Checklist </h3>
+                                        <p>Your goals for creating accessible text within the rich text component:</p>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-top: 15px">   
+                                        <table>
+                                            <tr>
+                                                <td valign="top" class="check">
+                                                <img src="http://www.nyu.edu/info/cms.emails/18-036/checkmark.png" alt="checkmark"></td>
+                                                <td class="checklist"><strong>Properly nest all headings in descending order</strong>
+                                                </td>
+                                            </tr>
+											<tr>
+                                            <td></td>
+                                            <td><ul class="bullet">
+                                                <li>Your page title is considered an H1 heading, so your first heading should be an H2.</li>
+                                                <li>When nesting headings, remember not to skip levels when creating sub-sections. For example, you can go from an H2 to an H3 but not an H2 to an H4.</li>
+                                                <li>Don’t use the heading format solely for aesthetic purposes. If you want to call out an important point, consider making that sentence bold instead of incorrectly applying a heading format.</li>
+                                                </ul>
+                                         </td>  
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" class="check">
+                                                <img src="http://www.nyu.edu/info/cms.emails/18-036/checkmark.png" alt="checkmark"></td>
+                                                <td class="checklist"><strong>Use descriptive text when sharing links; avoid “click here” or <span class="nowrap">“read more"</span></strong>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            <td></td>
+                                    
+                                                <td><ul class="bullet">
+                                               <li>Screen readers are unable to provide context to a link beyond the linked text &mdash; which means multiple “click here” links on a page all appear to be the same.</li>
+                                                </ul>
+                                                 </td>  
+                                            </tr>
+                                        </table>
+                                     </td>
+                                 </tr>
+								<tr>
+									<td class="button-padding">
+<!--button-->
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										  <tr>
+										    <td class="button">
+										      <table border="0" cellspacing="0" cellpadding="0">
+										        <tr>
+										          <td align="center" style="border-radius: 3px;" bgcolor="#FFFFFF"><a href="https://www.nyu.edu/life/information-technology/help-and-service-status/accessibility/websites/text.html" target="_blank" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #57068C; text-decoration: none; text-decoration: none;border-radius: 0px; padding: 12px 18px; border: 2px solid #57068C; display: inline-block;">REVIEW BEST PRACTICES <span>&#10095;</span></a></td>
+										        </tr>
+										      </table>
+										    </td>
+										  </tr>
+										</table>
+									</td>
+								</tr>	
+                            </table>
+                        </td>
+                  </tr>
+             </table>
+        </td>
+    </tr>
+</table>
+<!--email teaser block-->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center">
+            <table  align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">
+					<tr>
+		             	<td style="background-color: #d6d6d6;" bgcolor="#d6d6d6" height="30px">
+		                </td>
+		            </tr>	  
+                    <tr>
+                        <td bgcolor="#fdf2f7" style="border-top: 5px solid #D71e5e;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateColumns">
+                                     <tr>
+                                         <td align="center" valign="top" style="padding:45px 45px" width="25%" class="templateColumnContainer">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                     <td class="leftColumnContent">
+                                                     <img alt="The letter T" src="http://www.nyu.edu/info/cms.emails/18-036/images/img.png" width="53px" class="columnImage">
+                                                     </td>
+                                                 </tr>
+                                            </table>
+                                          </td>
+                                          <td align="center" valign="top" style="padding:45px 50px 45px 0px" width="75%" class="templateColumnContainer">
+                                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                 <tr>
+                                                      <td class="rightColumnContent" style="line-height: 23px; margin: 0px, 0px, 10px, 0px;font-family: Arial, sans-serif; font-size: 14px; color: #000000;">Look out for our next Focus on Accessibility when we discuss working with images and infographics.<a href="https://www.nyu.edu/life/information-technology/help-and-service-status/accessibility.html" style="color:#57068c; text-decoration: none; font-weight: bold; border-bottom: 1px solid #57068c;"> Learn more about accessibility at NYU.</a>
+                                                      </td>
+                                                </tr>
+                                             </table>
+                                         </td>
+                                     </tr>
+                            </table>
+                       </td>
+                    </tr>    
+            </table>
+        </td>
+    </tr>   
+</table>
+
+<!-- FOOTER -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" class="wrapper">
+        <table border="0" cellpadding="0" cellspacing="0" width="600" class="responsive">
+            <tr>
+                <td align="center" style="padding-bottom:10px">
+                <img alt="NYU logo" src="http://www.nyu.edu/info/digicomm.emails/images/nyu-logo-h-purple-76x28.png" width="76px" height="28px" style="display: block; border: 0px;" class="footer"></td>
+            </tr>
+            <tr>
+                <td align="center" class="footer">
+                DIGITAL COMMUNICATIONS GROUP</td>
+                </tr>
+            <tr>
+                <td align="center" class="footer">
+                    <a href="http://www.nyu.edu/employees/resources-and-services/media-and-communications/digital-communications/cms-training-support.html" style="color:#000000;" class="footer">cms training</a> | <a href="http://www.nyu.edu/employees/resources-and-services/media-and-communications/digital-communications/project-request-form.html" style="color:#000000;" class="footer">request form</a> | <a href="https://wp.nyu.edu/digicomm/" style="color:#000000;" class="footer">blog</a> | <a href="https://twitter.com/nyudigicomm" style="color:#000000;" class="footer">@NYUdigicomm</a>
+                </td>
+            </tr>
+        </table>
+        </td>
+    </tr>
+</table>
+
+
+</body>                            
+</html>
